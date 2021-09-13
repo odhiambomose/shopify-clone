@@ -1,35 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-/*Global Styles*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+:root{--primary-color:#134C3F;
+--light-grey:#F2F7ED;
+--beige:#FBF7ED;
+--dark-grey:#676765;
+--white:#FFFFFF;
 }
-/*Header Styles*/
-header {
-  background-color: #fbf7ed;
-  overflow: hidden;
+*{margin:0;
+padding:0;
+box-sizing:border-box;
 }
-/*Navigation Styles*/
-nav ul li{
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px;
-  cursor: pointer;
+/*global styles*/
+body{
+
+  font-family: "roboto",sans-serif;
+
 }
-.nav-left {
-  float: left;
-  width: 50%;
+/* button style */
+.btn{
+  padding: 0.9em;
+font-size: large;
 }
-.nav-right {
-  float: right;
-}
-.nav-right button {
-  float: right;
+.btn-green{
+  background-color:var(--primary-color);
+color:var(--white);
+border: none;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.container{width: 80%;
+margin: 0 auto;
+
+
 }
+/* navgation styles */
+.navigation{display:flex;
+justify-content:space-between;
+align-items: center;
+color:var(--dark-grey);
+}
+
+nav ul{display: flex;
+list-style-type: none;
+align-items: center;
+
+}
+nav ul li{padding: 0.5em;}
