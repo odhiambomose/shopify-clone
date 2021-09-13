@@ -84,3 +84,6 @@ width: 100%;
 .hero-right img {
   width: 100%;
 }
+header{
+  background-color:var(--beige);
+}
